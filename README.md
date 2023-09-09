@@ -4,7 +4,7 @@ Este é um projeto de exemplo de uma loja de alimentos chamada FoodBar. A loja o
 
 ## Demonstração
 
-Link do vídeo no linkedin: 
+Link do vídeo no linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7106330048667746304/
 
 
 
