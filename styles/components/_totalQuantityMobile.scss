@@ -1,0 +1,16 @@
+$component-name: 'totalQuantity_mobile';
+
+.#{$component-name}{
+    position: absolute;
+    left: 2%;
+    color: $white;
+    background: $red;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    text-align: center;
+
+    @include breakpoint(medium-normal-up){
+        display: none;
+    }
+}

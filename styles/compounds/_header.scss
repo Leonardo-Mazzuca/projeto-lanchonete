@@ -1,0 +1,63 @@
+header{
+    position: relative;
+    padding: 0 3rem;
+    transition: $transition-global;
+
+
+
+    nav{
+        padding: 0 !important;
+        margin: 0 !important;
+        z-index: 2;
+
+
+
+      
+
+        .navbar-toggler{
+            box-shadow: none !important;
+            border: none;
+
+            i{
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+
+        .nav-link{
+            font-weight: bold;
+        }
+
+        
+            .menu{
+
+                font-size: 20px;
+                color:  $black;
+                visibility: hidden;
+                pointer-events: none;
+
+                @include breakpoint(medium-normal){
+                    color: $white;
+                    z-index: 2;
+                    visibility: visible;
+                    pointer-events: all;
+                }
+            }
+
+            .navbar-collapse{
+                @include breakpoint(medium-normal){
+                    margin-left: 1rem;
+                }
+            }
+
+    }
+
+}
+
+
+
+
+
+
+
+

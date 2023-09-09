@@ -1,0 +1,10 @@
+@import 'breakpoints';
+
+.bg-white{background: $white;}
+.shadow-wrapper{
+    box-shadow: 0px 0px 50px -1px rgba(0,0,0, .5);
+    @include breakpoint(small-only){
+        padding: 0 !important;
+    }
+
+}

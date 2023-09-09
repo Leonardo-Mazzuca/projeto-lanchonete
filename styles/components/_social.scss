@@ -1,0 +1,44 @@
+$component-name: 'social';
+
+.#{$component-name}{
+
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: $transition-default;
+    margin-bottom: 1rem;
+
+    .social__btn-component{
+
+
+        i{
+            cursor: pointer;
+            transition: $transition-global;
+            
+
+            &:hover{
+                color: rgb(0,0,0, .5);
+            }
+        }
+    }
+
+    .icons{
+
+        display: flex;
+        align-items: center;
+        a{
+            color: $black-lighter;
+            margin: 0 0.5rem;
+            font-size: 24px;
+
+            &:hover{
+                color: $black;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meu css -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- BS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>FoodBar</title>
+</head>
+
+<body>
+
+    <div class="shadow-wrapper container">
+
+
+        <header class="container mt-5">
+
+            <nav class="navbar navbar-expand-lg d-flex">
+                <div class="container navbar__content">
+
+                    <a href="/" class="text-dark text-decoration-none fw-bold fs-4">FoodBar</a>
+                    <button class="navbar-toggler align-self-start text-light border-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list text-dark"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse position-relative" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hotline</a>
+                            </li>
+                        </ul>
+
+                        <div class="user__cart mx-5">
+                            <!-- user login -->
+                            <div class="user">
+                                <a href="./order.html"></a>
+                                <svg class="icon-user" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="28.000000pt" height="28.000000pt" viewBox="0 0 128.000000 128.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
+                                        stroke="none">
+                                        <path d="M501 1154 c-84 -22 -170 -73 -236 -139 -208 -208 -208 -542 0 -750
+                                        208 -208 542 -208 750 0 208 208 208 542 0 750 -67 67 -153 117 -240 140 -73
+                                        19 -202 18 -274 -1z m285 -115 c148 -56 249 -180 275 -338 15 -96 -12 -214
+                                        -67 -299 l-15 -23 -40 55 c-37 52 -135 126 -167 126 -9 0 -1 14 18 37 43 49
+                                        60 92 60 153 0 84 -53 161 -132 194 -134 56 -288 -47 -288 -194 0 -61 17 -104
+                                        58 -151 l31 -35 -33 -12 c-48 -18 -111 -70 -151 -126 l-34 -47 -15 23 c-141
+                                        216 -60 512 169 619 110 52 223 58 331 18z m-83 -209 c38 -30 52 -80 33 -123
+                                        -15 -37 -59 -67 -96 -67 -62 0 -118 70 -105 131 15 68 112 103 168 59z m52
+                                        -378 c62 -31 135 -112 135 -150 0 -19 -119 -71 -189 -83 -40 -6 -82 -6 -122 0
+                                        -72 12 -189 64 -189 84 0 24 58 101 94 126 83 55 191 65 271 23z" />
+                                    </g>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="container">
+       
+            <form action="" class="checkout__layout pb-3">
+
+                    <div class="row mx-auto">
+                        <section class="checkout__user col-md-10 col-lg-8 col-md-6 bg bg-light mb-3 mx-auto">
+                            <h1 class="fw-bold text-secondary">CHECKOUT</h1>
+        
+                            <section class="checkout__data_user">
+                                <!-- name -->
+                                <div>
+                                    <label for="name">Full name</label>
+                                    <input class="form-control" type="text" id="name" placeholder="Leonardo Mazzuca" required>
+                                </div>
+                
+                                <!-- e-mail -->
+                                <div>
+                                    <label for="email">Your email</label>
+                                    <input class="form-control" type="email" id="email" placeholder="user@email.com" required>
+                                </div>
+                
+                                <!-- Adress -->
+                                <div>
+                                    <label for="address">Address</label>
+                                    <input class="form-control" type="text" id="address" placeholder="knowwere, 1234" required>
+                                </div>  
+                                
+                                <!-- phone -->
+                                <div>
+                                    <label for="phone">Phone number</label>
+                                    <input class="form-control" type="tel" id="phone" placeholder="(99) 9999-9999" required>
+                                </div> 
+                                
+                                <div>
+                                    <label for="country">Country</label>
+                                    <select class="form-select" name="country" id="country" required>
+                                        <option value="1" selected disabled>Choose...</option>
+                                        <option value="2">Brazil</option>
+                                        <option value="3">E.U.A</option>
+                                    </select>
+                                </div>
+                
+                                <div>
+                                    <label for="city">City</label>
+                                    <select class="form-select" name="city" id="city" required>
+                                        <option value="1" selected disabled>Choose...</option>
+                                        <option value="2">São Paulo</option>
+                                        <option value="3">Washington</option>
+                                    </select>
+                                </div>
+                            </section>
+        
+                            <!-- checkout payment user -->
+                            <section class="checkout__payment">
+                                <div>
+                                    <label for="card-number">Card number</label>
+                                    <input class="form-control" type="text" id="card-number" placeholder="1234 5678 9091 4321" required>
+                                </div>
+        
+                                <div class="d-flex gap-2 mt-2">
+                                    <div class="w-50">
+                                        <label for="val">Val</label>
+                                        <input class="form-control" type="date" id="val" required>
+                                    </div>
+        
+                                    <div class="w-50">
+                                        <label for="cvv">CVV</label>
+                                        <input class="form-control" type="number" id="cvv" maxlength="4" placeholder="1234" required>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                      
+        
+                        <!-- products data -->
+                        <section id="product-data" class="products-checkout col-lg-4 col-md-6 d-flex flex-column justify-content-between mx-auto">
+                            <section id="container-products-checkout" class="d-flex flex-column gap-2 ms-2">
+                                
+                            </section>
+                
+                            <section class="mt-2 ms-2" id="finish-checkout">
+                                <p id="total-price-checkout" class="bg-light text-success">Total: $0</p>
+                                <button class="btn btn-dark" id="fisinsh-btn" type="submit">Order</button>
+                            </section>
+                        </section>
+
+
+                    </div>
+
+
+             
+            </form>
+        </main>
+
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <!-- js BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="./checkout.js"></script>
+</body>
+
+</html>

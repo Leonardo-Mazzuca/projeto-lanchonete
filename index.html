@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meu css -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- BS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>FoodBar</title>
+</head>
+
+<body>
+
+    <div class="shadow-wrapper container">
+        <header class="container mt-5">
+
+            <nav class="navbar navbar-expand-lg d-flex">
+                <div class="container navbar__content position-relative">
+                    <button class="navbar-toggler align-self-start text-light border-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i id="hamburger-menu" class="bi bi-list"></i>
+                    </button>
+                    <p id="quantity-mobile" class="totalQuantity_mobile opacity-0 pe-none">0</p>
+
+                    <div class="collapse navbar-collapse position-relative" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hotline</a>
+                            </li>
+                        </ul>
+
+                        <div class="user__cart">
+                            <!-- carrinho de compras -->
+                            <div class="cart">
+                                <p id="quantity" class="totalQuantity">0</p>
+                                <i class="bi bi-cart-plus-fill fs-3"></i>
+                            </div>
+                            <!-- user login -->
+                            <div class="user">
+
+                                <a href="./order.html">
+                                    <svg class="icon-user" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="28.000000pt" height="28.000000pt" viewBox="0 0 128.000000 128.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
+                                        stroke="none">
+                                        <path d="M501 1154 c-84 -22 -170 -73 -236 -139 -208 -208 -208 -542 0 -750
+                                        208 -208 542 -208 750 0 208 208 208 542 0 750 -67 67 -153 117 -240 140 -73
+                                        19 -202 18 -274 -1z m285 -115 c148 -56 249 -180 275 -338 15 -96 -12 -214
+                                        -67 -299 l-15 -23 -40 55 c-37 52 -135 126 -167 126 -9 0 -1 14 18 37 43 49
+                                        60 92 60 153 0 84 -53 161 -132 194 -134 56 -288 -47 -288 -194 0 -61 17 -104
+                                        58 -151 l31 -35 -33 -12 c-48 -18 -111 -70 -151 -126 l-34 -47 -15 23 c-141
+                                        216 -60 512 169 619 110 52 223 58 331 18z m-83 -209 c38 -30 52 -80 33 -123
+                                        -15 -37 -59 -67 -96 -67 -62 0 -118 70 -105 131 15 68 112 103 168 59z m52
+                                        -378 c62 -31 135 -112 135 -150 0 -19 -119 -71 -189 -83 -40 -6 -82 -6 -122 0
+                                        -72 12 -189 64 -189 84 0 24 58 101 94 126 83 55 191 65 271 23z" />
+                                    </g>
+                                </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- lista de itens adquiridos -->
+        <div class="cart__purchased">
+            <h2>
+                Products
+            </h2>
+            <div class="cart__purchased_items" id="container-cart">
+
+            </div>
+
+            <div>
+                <p class="fw-semibold px-2 bg bg-light text-success " id="total-cart">Total:$0
+                </p>
+            </div>
+
+            <!-- btns -->
+            <div class="cart__purchased_iterface">
+                <div class="close-btn" id="close-button"><i class="bi bi-x-lg"></i></div>
+                <div id="message" class="message__cart pe-none">
+                    <p class="bg bg-success bg-opacity-50 p-2 text-center">
+                        Please, select a product first...
+                    </p>
+                </div>
+                <div class="payment-btn">
+                    <button id="btn-request" href="">Request</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <main class="l-main container">
+
+            <article class="l-main__content">
+
+
+                <div class="l-main__content-wrapper row align-self-start">
+
+                    <div class="left-menu col-1">
+                        <a href="#">Process</a>
+                        <a href="#">Design</a>
+                        <a href="#">Material</a>
+
+                    </div>
+
+                    <div class="logo d-flex align-items-center flex-column col-lg-4">
+                        <h1>FoodBar</h1>
+                        <figure>
+                            <img src="./assets/imgs/img-1.png" alt="Imagem de um prato de restaurante" id="img-slide">
+                        </figure>
+                    </div>
+
+                    <section class="left-menu__compound col-lg-6">
+
+                        <div class="content" id="main-product">
+                            <h1 id="title" class="fw-bold">
+                            Pepper Chicken
+                            </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi nostrum quasi
+                                    reprehenderit perferendis laudantium eligendi velit rem repellat nam.</p>
+                            <article class="price__order">
+                                            <div class="price">
+                                                <h2 class="fw-bold" id="price_cont">
+                                                    $59
+                                                </h2>
+                                                <p>Total payable</p>
+                                            </div>
+                                    <button id="add-btn">Add to cart</button>
+                            </article>
+                
+                        </div>
+
+                    </section>
+                </div>
+
+
+
+                <div class="content-cards" id="cards">
+
+
+                </div>
+                </section>
+
+
+                <!-- icons component -->
+                <section class="social">
+                    <div class="social__btn-component ms-5">
+                        <i class="bi bi-caret-left-fill fs-2" id="icon-left"></i>
+                        <i class="bi bi-caret-right-fill fs-2" id="icon-right"></i>
+                    </div>
+                    <div class="icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+
+
+
+                    </div>
+                </section>
+            </article>
+
+
+    </div>
+
+
+    </main>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <!-- js BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

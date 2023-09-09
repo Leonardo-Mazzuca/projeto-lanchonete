@@ -1,0 +1,60 @@
+$component-name: 'left-menu';
+
+.#{$component-name}{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 3rem;
+    margin-bottom: 3.5rem;
+
+
+    
+    @include breakpoint(medium-normal){
+        position: absolute;
+        bottom: 68%;
+        z-index: 1;
+        right: 0;
+    }
+
+    @include breakpoint(small-only){
+        bottom: 70%;
+    }
+
+
+
+    a{
+        text-decoration: none;
+        margin-right: 1rem;
+        padding: 1rem;
+        font-size: 15px;
+        font-weight: 600;
+        color: $black;
+        transition: $transition-global;
+        transform: rotate(-90deg);
+
+        @include breakpoint(small-normal){
+            color: $white;
+           
+            
+        }
+
+        @include breakpoint-between(764px,991px){
+            color: $white;
+        }
+
+        @include breakpoint(small-only){
+            padding: 1rem 1rem 0 1rem;
+        }
+
+
+
+        
+
+        &:hover{
+            color: $red;
+        }
+    }
+}

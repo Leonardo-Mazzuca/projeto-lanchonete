@@ -1,0 +1,112 @@
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+
+@mixin breakpoint($width){
+
+
+// ========================= small =========================
+    @if $width == small-only{
+        @media (max-width: 37.4375em) {//599
+            @content;
+        }
+    }
+
+
+    @else if $width == small-up{
+        @media (min-width: 37.5em) {//600px
+            @content;
+        }
+    }
+
+    @if $width == small-normal{
+        @media (max-width: 47.75em) {//764px
+            @content;
+        }
+    }
+
+    
+// ========================= medium =========================
+
+    @else if $width == medium-only{
+        @media (max-width: 56.1875em) {//899px
+            @content;
+        }
+    }
+
+    @else if $width == medium-up{
+        @media (min-width: 56.25em) {//900px
+            @content;
+        }
+    }
+
+    @else if $width == medium-normal{
+        @media (max-width: 62.5em) {//1000px
+            @content;
+        }
+    }
+
+    @else if $width == medium-normal-up{
+        @media (min-width: 62.5em) {//1000px
+            @content;
+        }
+    }
+
+    
+// ========================= large =========================
+
+    @else if $width == large-only{
+        @media (max-width: 74.9375em) {//1199px
+            @content;
+        }
+    }
+
+    @else if $width == large-up{
+        @media (min-width: 75.25em) {//1200px
+            @content;
+        }
+    }
+
+// ========================= x-large =========================
+
+    @else if $width == x-large-only{
+        @media (max-width:  87.4375em) {//1399px
+            @content;
+        }
+    }
+
+    @else if $width == x-large-up{
+        @media (min-width: 87.5em) {//1400px
+            @content;
+        }
+    }
+
+}
+
+
+// between
+
+@mixin breakpoint-between ($min, $max){
+    @media (min-width: $min) and (max-width: $max){
+        @content;
+    }
+
+}
+
+
+
+
+
+
+
+
+

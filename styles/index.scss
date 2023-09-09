@@ -1,0 +1,57 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// abstract
+@import './abstract/variables';
+@import './abstract/backgrounds';
+@import './abstract/breakpoints';
+
+// compounds
+@import './compounds/header';
+@import './compounds/left-menu__compound';
+@import './compounds/main';
+@import './compounds/checkout';
+
+// components
+@import './components/user';
+@import './components/left-menu';
+@import './components/cards';
+@import './components/logo';
+@import './components/social';
+@import './components/cart-purchase';
+@import './components/cart-interface';
+@import './components/messageCart';
+@import './components/totalQuantityMobile';
+
+
+
+
+
+
+:root{
+    --main-font: 'Poppins', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font)
+}
+
+body{
+    background: var(--bg-color);
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+}

@@ -1,0 +1,28 @@
+$compound-name: 'checkout__layout';
+
+.#{$compound-name}{
+
+
+    .checkout__user{
+        border-radius: 6px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .checkout__data_user{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem;
+            margin-top: 1rem;
+
+            input, select{
+                border: none;
+            }
+            
+
+        }
+
+
+    }
+}

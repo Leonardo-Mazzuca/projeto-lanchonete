@@ -1,0 +1,115 @@
+$component-name: 'content-cards';
+
+.#{$component-name}{
+
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    transition: 1s linear;
+    height: 250px;
+
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    .card{
+
+        position: relative;
+        border: 1px solid #000;
+        min-width: 175px;
+        height: 190px;
+        margin: 0 1rem;
+        background: $black-lighter;
+        border-radius: 50px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        &:nth-last-child(1){
+            margin-right: 0px;
+        }
+
+        figure img{
+            width: 100px !important;
+            position: relative;
+            top: -22px;
+            left: -10px;
+        }
+
+        .top-wrapper{
+            top: -30px;
+        }
+
+
+        h2{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        h3{
+            font-size: 13px;
+            padding: 0 10px;
+            margin-top: -8px;
+            font-weight: 500;
+        
+        }
+
+        p{
+            color: rgb(201,201,201);
+            font-size: 10px;
+            font-weight: 500;
+            padding: 0 10px;
+        }
+
+        .card__text{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 0.3rem 0.1rem;
+
+            @include breakpoint(medium-only){
+                    margin: 0;
+            }
+
+            .card__text-main{
+                @include breakpoint(medium-only){
+                    max-width: 100px;
+                }
+            }
+            
+        }
+
+
+
+        .rate{
+            display: flex;
+            text-align: center;
+            padding: 2px 10px;
+            color: $white;
+            flex-direction: column;
+
+            h5{
+                font-size: 14px;
+            }
+        }
+
+
+    }
+  
+
+
+    
+
+}

@@ -1,0 +1,21 @@
+$component-name: 'message__cart';
+
+.#{$component-name}{
+
+    position: absolute;
+    z-index: 50;
+    color: $white;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in; 
+    left: 15%;
+    bottom: 60%;
+
+
+    &.visible{
+        transition: opacity 0.5s ease-out; 
+        opacity: 1;       
+    }
+
+
+
+}

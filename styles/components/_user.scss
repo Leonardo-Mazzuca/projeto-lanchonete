@@ -1,0 +1,61 @@
+$component-name: 'user__cart';
+
+.#{$component-name}{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 50;
+
+    @include breakpoint(medium-normal){
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+    }
+    
+
+    .cart{
+        position: relative;
+
+
+        .totalQuantity{
+
+            position: absolute;
+            background: $red;
+            top: 1px;
+            left: 18px;
+            height: 22px;
+            width: 22px;
+            text-align: center;
+            color: $white;
+            border-radius: 50%;
+
+        }
+
+        
+
+    }
+        .user{
+
+            position: relative;
+
+
+            .icon-user{
+                fill: #F29727;
+                margin: 0 1rem;
+                position: relative;
+                width: 100%;
+
+                @include breakpoint(small-only){
+                    margin-right: 0;
+                }
+
+
+    
+
+            }
+
+        }
+
+
+    }

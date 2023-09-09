@@ -1,0 +1,32 @@
+$component-name: 'logo';
+
+.#{$component-name}{
+
+   
+        transition: 1s linear;
+        background: $black-lighter;
+        position: relative;
+        height: 380px;
+        bottom: 40px;
+
+
+        h1{
+
+            color: $white;
+            text-align: center;
+            margin-top: 0.3rem;
+            font-size: 25px;
+            font-weight: 600;
+        
+
+        }
+
+        figure img {
+            width: 350px;
+            filter: drop-shadow(0px 0px 20px rgba(0,0,0, .6));
+            margin: 1rem 0;
+        
+        }
+
+  
+}

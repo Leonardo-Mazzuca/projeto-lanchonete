@@ -1,0 +1,72 @@
+$component-name: 'left-menu__compound';
+
+.#{$component-name}{
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include breakpoint(small-normal){
+        flex-direction: row;
+        order: 3;
+    }
+
+    .content{
+
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        transition: 1s linear;
+        margin: 2rem 1rem;
+        
+
+        h1{
+
+            font-size: 40px;
+            transition: 1s linear;
+        }
+
+        p{
+
+            font-size: 15px;
+            font-weight: 600;
+            width: 350px;
+            word-break: break-all;
+        }
+
+        .price__order{
+            display: flex;
+            align-items: center;
+
+            .price{
+
+                h2{
+                    color: $red;
+                    line-height: 10px;
+                }
+
+                p{
+                    font-size: 13px;
+                    width: 100px;
+                }
+            }
+
+            button{
+                padding: 0.5rem 1.2rem;
+                background: $black;
+                text-decoration: none;
+                font-size: 14px;
+                color: $white;
+                margin-left: 35px;
+                border: none;
+            }
+
+        }
+
+
+    }
+}
