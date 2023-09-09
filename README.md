@@ -35,6 +35,11 @@ Link do vídeo no linkedin: https://www.linkedin.com/feed/update/urn:li:activity
 
 Você pode clonar este repositório e realizar melhorias e correções conforme necessário. Sinta-se à vontade para abrir problemas e solicitações de pull.
 
+#IMPORTANTE: É necessário o uso do servidor "Vite" para poder abrir este site em um navegador.
+https://vitejs.dev
+
+
+
 ## Autor
 
 Leonardo de Souza Mazzuca
